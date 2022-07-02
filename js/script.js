@@ -5,6 +5,8 @@ let botScore = 0;
 const result = document.querySelector("#roundTally");
 const playerDisplay = document.querySelector("#playerScore");
 const botDisplay = document.querySelector("#botScore");
+const botImagecontainer = document.querySelector(".botImage")
+const botImage = document.createElement('img')
 const playerButton = document.querySelectorAll(".playerButton");
 
 //each click triggers a round
@@ -16,14 +18,22 @@ playerButton.forEach((button) =>
 );
 
 //basic game logic
+
+//bot selection appends image of bot choice to the DOM
 function botPlay() {
   const random = Math.floor(Math.random() * 3);
   switch (random) {
     case 0:
+      botImage.src = 'img/ninja.png';
+      botImagecontainer.appendChild(botImage)
       return "ninja";
     case 1:
+      botImage.src = 'img/hunter.png';
+      botImagecontainer.appendChild(botImage)
       return "hunter";
     case 2:
+      botImage.src = 'img/bear.png';
+      botImagecontainer.appendChild(botImage)
       return "bear";
   }
 }

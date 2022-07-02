@@ -4,22 +4,46 @@
     padding: 0;
 }
 
+:root {
+    --primary-dark: rgb(19, 18, 18);
+    --primary-light: #eee;
+    --main-purple: rgb(148, 82, 168);
+    --main-green: rgb(79, 153, 112);
+    --main-brown: rgb(197, 147, 72);
+}
+
+.purple-text {
+    color: var(--main-purple);
+}
+
+.green-text {
+    color: var(--main-green);
+}
+
+.brown-text {
+    color: var(--main-brown);
+}
+
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    font-family: 'Permanent Marker', Courier, monospace;
 }
+
+/* header  */
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(39, 38, 39);
+    background-color: var(--primary-dark);
     padding: 2rem;
     gap: 3rem;
     height: 20vh;
 }
+
 
 header img {
     max-width: 20%;
@@ -28,13 +52,25 @@ header img {
     display: block;
 }
 
+/* main section */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 75vh;
+    background-color: var(--primary-light);
     padding: 2rem;
     gap:2rem
+}
+
+.main-scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 main img {
@@ -42,9 +78,48 @@ main img {
     max-height: 20vh;
 }
 
+#ninja {
+    border: 0.2rem solid var(--main-purple);
+    border-radius: 10%;
+}
+
+#ninja:hover {
+    background-color: var(--main-purple);
+    border: 0.2rem solid black
+}
+
+#hunter {
+    border: 0.2rem solid var(--main-green);
+    border-radius: 10%;
+}
+
+#hunter:hover {
+    background-color: var(--main-green);
+    border: 0.2rem solid black
+}
+
+#bear {
+    border: 0.2rem solid var(--main-brown);
+    border-radius: 10%;
+}
+
+#bear:hover {
+    background-color: var(--main-brown);
+    border: 0.2rem solid black
+}
+
+.botImage {
+    border:0.2rem solid var(--primary-dark);
+    border-radius: 10%;
+}
+
+/* footer */
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 5vh;
+    background-color: var(--primary-dark);
 }
 

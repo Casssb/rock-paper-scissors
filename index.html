@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Ninja, Hunter, Bear</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/ninjahunterbear.jpg"
+        alt="logo of a ninja, bear and hunter"
+      />
+      <h1>
+        <span id="purple-text">Ninja</span>,
+        <span id="green-text">Hunter</span>, <span id="brown text">Bear</span>
+      </h1>
+    </header>
+
+    <main>
+      <div class="main-scoreboard">
+        <p id="roundTally">Ninja, hunter or bear?</p>
+        <p id="playerScore">player score here</p>
+        <p id="botScore">bot score here</p>
+      </div>
+
+      <div class="playerChoices">
+        <button class="playerButton" id="ninja">
+          <img src="img/ninja.png" alt="ninja log" />
+        </button>
+        <button class="playerButton" id="hunter">
+          <img src="img/hunter.png" alt="hunter logo" />
+        </button>
+        <button class="playerButton" id="bear">
+          <img src="img/bear.png" alt="bear logo" />
+        </button>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.flaticon.com/free-icons/bear" title="bear icons"
+        >Images taken from Flaticon</a
+      >
+    </footer>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

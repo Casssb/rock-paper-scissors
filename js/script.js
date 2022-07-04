@@ -42,6 +42,7 @@ function playRound(botChoice, playerChoice) {
     result.style.fontSize = "medium";
     result.style.color = "black";
     botImagecontainer.style.backgroundColor = 'white';
+    botImagecontainer.style.border ='0.2rem solid black'
   if (
     (playerChoice === "ninja" && botChoice === "hunter") ||
     (playerChoice === "hunter" && botChoice === "bear") ||

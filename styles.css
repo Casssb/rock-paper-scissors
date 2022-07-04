@@ -88,7 +88,8 @@ main img {
 
 #ninja:hover {
     background-color: var(--main-purple);
-    border: 0.2rem solid black
+    border: 0.2rem solid black;
+    transform: scale(1.05);
 }
 
 #hunter {
@@ -98,7 +99,8 @@ main img {
 
 #hunter:hover {
     background-color: var(--main-green);
-    border: 0.2rem solid black
+    border: 0.2rem solid black;
+    transform: scale(1.05);
 }
 
 #bear {
@@ -108,7 +110,8 @@ main img {
 
 #bear:hover {
     background-color: var(--main-brown);
-    border: 0.2rem solid black
+    border: 0.2rem solid black;
+    transform: scale(1.05);
 }
 
 button:hover {
@@ -116,7 +119,6 @@ button:hover {
 }
 
 .botImage {
-    border:0.2rem solid var(--primary-dark);
     border-radius: 10%;
 }
 

@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# Rock-Paper-Scissors
 
 My first proper project via The Odin Project curriculum using vanilla JS, HTML & CSS.
 
